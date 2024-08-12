@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MyPortfolio Bootstrap Template - Gallery</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,500,600,700|Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="title-container">
+      <h1 class="navbar-brand">Made4AnotherWorld</h1>
+    </div>
+  </header>
+
+    <!-- Subnav Section -->
+    <nav class="subnav">
+        <ul class="subnav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="#">WorldBuilding</a></li>
+          <li><a href="#">BookBinding</a></li>
+          <li><a href="#">Design</a></li>
+        </ul>
+      </nav>
+
+  <!-- Main Content -->
+  <main id="main">
+    <section class="gallery-container">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <a href="Aur'RussArtPiece.html">
+            <img src="WebDesignImages/AurrusinAOT.png" alt="Gallery Image 1">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="MakiColorizedArtPiece.html">
+            <img src="WebDesignImages/MakiColorized.png" alt="Gallery Image 2">
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a href="LadyKaguyaArtPiece.html">
+            <img src="WebDesignImages/LadyKaguyaFanart.png" alt="Gallery Image 3">
+          </a>
+        </div>
+        <div class="gallery-item">
+            <a href="WaterofLifeArtPiece.html">
+              <img src="WebDesignImages/TheWaterofLifeArt.png" alt="Gallery Image 4">
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="TheAvatarsArtPiece.html">
+              <img src="WebDesignImages/TheAvatarsFanart.png" alt="Gallery Image 5">
+            </a>
+        </div>
+        <div class="gallery-item">
+          <a href="ZeldaArtPiece.html">
+            <img src="WebDesignImages/Untitled_Artwork.png" alt="Gallery Image 6">
+          </a>
+        </div>
+        <div class="gallery-item">
+            <a href="MushiShiArtPiece.html">
+              <img src="WebDesignImages/MushiShiFanart.png" alt="Gallery Image 7">
+            </a>
+        </div>
+        <!-- Add more gallery items as needed -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">&copy; Copyright Made4AnotherWorld. All Rights Reserved</p>
+        </div>
+        <div class="col-sm-6 social text-md-end">
+          <a href="#"><span class="bi bi-twitter"></span></a>
+          <a href="#"><span class="bi bi-facebook"></span></a>
+          <a href="#"><span class="bi bi-instagram"></span></a>
+          <a href="#"><span class="bi bi-linkedin"></span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Masonry Initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const grid = document.querySelector('.gallery-grid');
+      if (grid) {
+        imagesLoaded(grid, function() {
+          const masonry = new Masonry(grid, {
+            itemSelector: '.gallery-item',
+            columnWidth: '.gallery-item',
+            percentPosition: true,
+            gutter: 20
+          });
+
+          window.addEventListener('resize', function() {
+            masonry.layout();
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>
